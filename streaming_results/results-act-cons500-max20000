@@ -1,0 +1,55 @@
+Reading (with alignment) bin file /mnt/sdb/query.bin ...Metadata: #pts = 29316, #dims = 100, aligned_dim = 104... allocating aligned memory of 3048864 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: /mnt/sdb/gt100_learn-act-cons500-max20000, size: 23452808, cache_size: 23452808
+Reading truthset file /mnt/sdb/gt100_learn-act-cons500-max20000 ...
+Metadata: #pts = 29316, #dims = 100... 
+Using AVX2 distance computation DistanceL2Int8.
+Resizing took: 0.000241643s
+Reading bin file /mnt/sdb/local_index.after-streaming-act10000-cons500-max20000.tags ...
+Opening bin file /mnt/sdb/local_index.after-streaming-act10000-cons500-max20000.tags... 
+Metadata: #pts = 10501, #dims = 1...
+done.
+Tags loaded.
+From graph header, expected_file_size: 2019940, _max_observed_degree: 78, _start: 10500, file_frozen_pts: 1
+Loading vamana graph /mnt/sdb/local_index.after-streaming-act10000-cons500-max20000...done. Index has 10501 nodes and 494478 out-edges, _start is set to 10500
+Not repositioning frozen point as it is already at the end.
+Num frozen points:1 _nd: 10500 _start: 10500 size(_location_to_tag): 10500 size(_tag_to_location):10500 Max points: 10500
+Index loaded
+Using 64 threads to search
+  Ls         QPS  Mean Latency (mus)   99.9 Latency   Recall@10
+===============================================================
+  20   406311.43              148.75        2621.23       93.85
+  40   270762.22              227.50        5716.20       97.87
+  60   187475.68              305.84       12145.99       98.94
+  80   143209.73              394.86       24926.73       99.38
+ 100   134374.25              446.39       22043.00       99.59
+Done searching. Now saving results 
+Writing bin: /mnt/sdb/results/results__20_idx_uint32.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
+Writing bin: /mnt/sdb/results/results__20_dists_float.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
+Writing bin: /mnt/sdb/results/results__40_idx_uint32.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
+Writing bin: /mnt/sdb/results/results__40_dists_float.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
+Writing bin: /mnt/sdb/results/results__60_idx_uint32.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
+Writing bin: /mnt/sdb/results/results__60_dists_float.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
+Writing bin: /mnt/sdb/results/results__80_idx_uint32.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
+Writing bin: /mnt/sdb/results/results__80_dists_float.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
+Writing bin: /mnt/sdb/results/results__100_idx_uint32.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
+Writing bin: /mnt/sdb/results/results__100_dists_float.bin
+bin: #pts = 29316, #dims = 10, size = 1172648B
+Finished writing bin.
